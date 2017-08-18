@@ -15,12 +15,12 @@ const scripts = {
 const config = {
 	entry: {
 		main: [
-			'./test/scripts/main.js'
+			path.resolve(__dirname, './test/scripts/main.js')
 		]
 	},
 	devtool: 'source-map',
 	devServer: {
-		contentBase: './test'
+		contentBase: path.resolve(__dirname, './test')
 	},
 	output: {
 		filename: 'bundle.js',
